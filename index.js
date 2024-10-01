@@ -27,7 +27,7 @@ const server = http.createServer((req, res) => {
 
             break
         case '/videos':
-            res.writeHead(200, { 'Content-Type': 'text/plain' })
+            res.writeHead(200, { 'Content-Type': 'text/html' })
             res.write(`
                 <div class='mt-5 d-flex flex-column align-items-center gap-5'><iframe width="560" height="315" src="https://www.youtube.com/embed/cM98Vencdwo?si=30Uw2UvXbKtFdTB1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/LkIlrNAGXQM?si=tr72usu2EQEA0Lyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
